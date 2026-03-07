@@ -6,13 +6,11 @@ public class Coba {
     protected double lebar;
     protected double sisi;
 
-    // methods
-    // setter
+    // ===== PERSEGI PANJANG =====
     public void setPanjang(double panjang) {
         this.panjang = panjang;
     }
 
-    // getter
     public double getPanjang() {
         return panjang;
     }
@@ -21,12 +19,24 @@ public class Coba {
         this.lebar = lebar;
     }
 
-    public void cetakLuas() {
-        System.out.println("Luasnya adalah : " + (panjang * lebar));
+    public void cetakLuasPersegiPanjang() {
+        System.out.println("Luas Persegi Panjang adalah : " + (panjang * lebar));
     }
 
-    public double hitungLuas() {
-        double luas = panjang * lebar;
-        return luas;
+    public double hitungLuasPersegiPanjang() {
+        return panjang * lebar;
+    }
+
+    // ===== PERSEGI =====
+    public void setSisi(double sisi) {
+        this.sisi = sisi;
+    }
+
+    public void cetakLuasPersegi() {
+        System.out.println("Luas Persegi adalah : " + (sisi * sisi));
+    }
+
+    public double hitungLuasPersegi() {
+        return sisi * sisi;
     }
 }
